@@ -92,7 +92,7 @@ function App() {
     const data = pooledImage.map((e) => e.join(", ")).join("\n");
     console.log();
 
-    const res = await fetch("http://localhost:8080/letter", {
+    const res = await fetch("http://13.214.200.89/letter", {
       method: "POST",
       body: data,
     });
